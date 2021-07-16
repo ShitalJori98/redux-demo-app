@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+.actions {
+  opacity: 0;
+}
+
+tr:hover .actions {
+  opacity: 1;
+}
+
+tbody td a {
+  color: rgb(50, 115, 214);
+
+  &:hover {
+    color: rgb(180, 39, 180);
+  }
+}

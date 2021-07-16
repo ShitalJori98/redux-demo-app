@@ -1,17 +1,21 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
-function Navbar() {
-    return (
-        <nav className="navbar shadow fixed-top navbar-expand-sm navbar-dark bg-primary">
-            <div className="container">
-                <a href="#" className="navbar-brand">Contact Book App</a>
+const Navbar = () => {
+  return (
+    <nav className="navbar shadow fixed-top navbar-expand-sm navbar-dark bg-primary">
+      <div className="container">
+        <Link to="/" className="navbar-brand">
+          Contact Book
+        </Link>
+        <div>
+          <Link to="/contacts/add" className="btn btn-light ml-auto">
+            Create Contact
+          </Link>
+        </div>
+      </div>
+    </nav>
+  );
+};
 
-               <div>
-               <a  href="#" className="btn btn-light ml-auto">Create Contact</a>
-               </div>
-            </div>
-        </nav>
-    )
-}
-
-export default Navbar
+export default Navbar;
