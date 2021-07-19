@@ -59,7 +59,7 @@ export default function AddContact() {
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
-            <button className="btn btn-primary" type="submit">
+            <button className="btn btn-primary" type="submit" style={{marginTop:'10px',left:'0'}}>
               Create Contact
             </button>
           </form>
