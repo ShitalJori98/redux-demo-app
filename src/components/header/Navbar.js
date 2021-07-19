@@ -9,7 +9,7 @@ const Navbar = () => {
           Contact Book
         </Link>
         <div>
-          <Link to="/contacts/add" className="btn btn-light ml-auto">
+          <Link to="/contacts/add" className="btn btn-light ml-auto" style={{backgroundColor:'white'}}>
             Create Contact
           </Link>
         </div>
